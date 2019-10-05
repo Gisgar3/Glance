@@ -1,0 +1,13 @@
+body {
+  padding: 50px;
+  background-color: red; }
+
+@font-face {
+  font-family: "TitilliumWebFont";
+  src: url("/fonts/TitilliumWeb-Light.ttf"); }
+
+#headtext {
+  font-family: "TitilliumWebFont";
+  color: coral; }
+
+/*# sourceMappingURL=style.css.map */
