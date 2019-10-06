@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Glance | Create</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="topbar">
         <a href="/"><button class="barbutton">Home</button></a>
     </div>
-    <center><h1 id="headtext" style="font-size: 3.5vw">Create a new command</h1></center>
+    <center>
+        <h1 id="headtext" style="font-size: 3.5vw">Create a new command</h1>
+    </center>
     <div id="creationGrid">
         <div class="column">
             <center>
@@ -22,8 +26,15 @@
                 </div>
             </center>
         </div>
-        <div class="column" id="optionColumn">
-
+        <div class="column">
+            <center>
+                <div class="dropdown">
+                    <button class="dropbutton">Channel</button>
+                    <div class="dropdown-content">
+                        <a onclick="determineContent(this)">630387403378393131</a>
+                    </div>
+                </div>
+            </center>
         </div>
         <div class="column">
 
@@ -38,9 +49,9 @@
     <div class="footer">
         <center><a href="/"><button class="barbutton">Finish</button></a></center>
     </div>
-  </body>
+</body>
 
-  <script>
+<script>
     function determineContent(element) {
         switch (element.innerText) {
             case "Send Message": {
@@ -63,6 +74,6 @@
             }
         }
     }
-  </script>
+</script>
 
 </html>
