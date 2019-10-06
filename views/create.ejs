@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glance | Create</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="topbar">
+        <a href="/"><button class="barbutton">Home</button></a>
+    </div>
+    <center><h1 id="headtext" style="font-size: 3.5vw">Create a new command</h1></center>
+    <div id="creationGrid">
+        <div class="column">
+            <center>
+                <div class="dropdown">
+                    <button class="dropbutton">Action</button>
+                    <div class="dropdown-content">
+                        <a onclick="determineContent(this)">Send Message</a>
+                        <a onclick="determineContent(this)">Ban Member</a>
+                        <a onclick="determineContent(this)">Kick Member</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+  </body>
+
+  <script>
+    function determineContent(element) {
+        switch (element.innerText) {
+            case "Send Message": {
+                var commandName = window.prompt("What would you like to define this command as?");
+                if (commandName == "status") {
+                    window.alert("\"status\" is a reserved command. Please create another.");
+                }
+                else {
+                    var commandMessage = window.prompt("What message would you like to be sent?");
+                    console.log(commandMessage);
+                }
+            }
+        }
+    }
+  </script>
+
+</html>
