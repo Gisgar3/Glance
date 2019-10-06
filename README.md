@@ -1,2 +1,2 @@
-# hack_upstate_xiv_project
+# Glance
 My project for Hack Upstate XIV in Syracuse, NY
