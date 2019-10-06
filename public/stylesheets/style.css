@@ -74,11 +74,11 @@ body {
 
 #creationGrid {
   width: 100%;
-  height: 200px; }
+  height: 400px; }
 
 .column {
   width: 20%;
-  height: 200px;
+  height: 400px;
   padding: 15px;
   float: left;
   padding-top: 60px; }
