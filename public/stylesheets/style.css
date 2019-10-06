@@ -92,7 +92,10 @@ body {
   border: none;
   cursor: pointer;
   width: 100px;
-  box-shadow: 0px 2px 3px black; }
+  box-shadow: 0px 2px 3px black;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s; }
 
 .dropdown {
   position: relative;

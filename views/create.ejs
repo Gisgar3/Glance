@@ -40,8 +40,16 @@
                     window.alert("\"status\" is a reserved command. Please create another.");
                 }
                 else {
-                    var commandMessage = window.prompt("What message would you like to be sent?");
-                    console.log(commandMessage);
+                    if (commandName == null) {
+                        // Do nothing
+                    }
+                    else if (commandName == "") {
+                        window.alert("No input was received. Please try again.");
+                    }
+                    else {
+                        var commandMessage = window.prompt("What message would you like to be sent?");
+                        console.log(commandMessage);
+                    }
                 }
             }
         }
